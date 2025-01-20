@@ -1,0 +1,56 @@
+<!-- this is our very first doms files where we select html elements by js we will make web app after few days   -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simple DOM Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      margin-top: 50px;
+    }
+    #colorBox {
+      width: 200px;
+      height: 200px;
+      margin: 20px auto;
+      background-color: lightgray;
+      border: 2px solid #ccc;
+      border-radius: 10px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 16px;
+      margin: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>Change the Color Box</h2>
+  <div id="colorBox"></div>
+  <button id="redButton">Red</button>
+  <button id="blueButton">Blue</button>
+  <button id="greenButton">Green</button>
+
+  <script>
+    const colorBox = document.getElementById('colorBox');
+    const redButton = document.getElementById('redButton');
+    const blueButton = document.getElementById('blueButton');
+    const greenButton = document.getElementById('greenButton');
+
+    redButton.addEventListener('click', () => {
+      colorBox.style.backgroundColor = 'red';
+    });
+
+    blueButton.addEventListener('click', () => {
+      colorBox.style.backgroundColor = 'blue';
+    });
+
+    greenButton.addEventListener('click', () => {
+      colorBox.style.backgroundColor = 'green';
+    });
+  </script>
+</body>
+</html>
