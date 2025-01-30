@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String Methods in JavaScript</title>
+  <script>
+    // Original String - Bhai Ke Codes ka asli magic
+    let str = "Bhai Ke Codes";
+    
+    // 1. Length of the String
+    document.write("<h2>String Methods Demonstration</h2>");
+    document.write("<p><strong>Length of the string:</strong> " + str.length + "</p>");
+
+    // 2. Uppercase mein badalna - Chalo, bhai ko thoda zyada formal banate hain
+    document.write("<p><strong>Uppercase:</strong> " + str.toUpperCase() + "</p>");
+
+    // 3. Lowercase mein badalna - Ab thoda relaxed feel karte hain
+    document.write("<p><strong>Lowercase:</strong> " + str.toLowerCase() + "</p>");
+
+    // 4. Substring ka check - Kya 'Ke' yahan hai? Aur 'XYZ' jo dikhne mein cool lagta hai?
+    document.write("<p><strong>Includes 'Ke'?</strong> " + str.includes("Ke") + "</p>");
+    document.write("<p><strong>Includes 'XYZ'?</strong> " + str.includes("XYZ") + "</p>");
+
+    // 5. Index ka magic - 'C' ka address kya hai? Kahan milta hai?
+    document.write("<p><strong>Index of 'C':</strong> " + str.indexOf("C") + "</p>");
+    document.write("<p><strong>Index of 'Z':</strong> " + str.indexOf("Z") + "</p>");
+
+    // 6. Slice karte hain - Yeh kuch portion kaat lete hain, taste badal jayega
+    document.write("<p><strong>Slice from 0 to 4:</strong> " + str.slice(0, 4) + "</p>");
+    document.write("<p><strong>Slice from position 5:</strong> " + str.slice(5) + "</p>");
+
+    // 7. Replace karte hain - Bhai ko Vyankatesh se replace karne ka time aagaya
+    document.write("<p><strong>Replace 'Bhai' with 'Vyankatesh':</strong> " + str.replace("Bhai", "Vyankatesh") + "</p>");
+
+    // 8. Trim karte hain - Yeh extra spaces ko hata ke clean karte hain
+    let spacedStr = "   Bhai Ke Codes   ";
+    document.write("<p><strong>Before Trim:</strong> '" + spacedStr + "'</p>");
+    document.write("<p><strong>After Trim:</strong> '" + spacedStr.trim() + "'</p>");
+  </script>
+</head>
+<body>
+</body>
+</html>
