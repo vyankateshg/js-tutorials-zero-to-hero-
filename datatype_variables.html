@@ -1,0 +1,124 @@
+<!-- what is javascript ?
+ ans -> a language use to make web site we can use any broser such as chrome -->
+ <!-- setting up VS CODE yayay tick all the check box -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ </head>
+ <body>
+    <script>
+        console.log("jai shree ram ");
+        console.log("Welcome to bhai ke code ")
+        name = "vyanki bhai";
+        age = 29;
+        price = 150;
+         x= null;
+         y = undefined;
+        // console.log(name , age, "the price of mark 1 ", price)
+        isFollow = false;
+        isUnFollow = true;
+        console.log(x)
+        console.log(y)
+        // javascript is dynamically typed language we can store any data type in any variable
+        // example
+        fullname = "vyanki bhai"
+        console.log(fullname)
+        fullname = 20;
+        console.log(fullname)
+        fullname = false;
+        console.log(fullname)
+        // rules for variable 
+    // no keyword ( rserved words )
+    // case sensitive
+    // the name should be starts with letter , $ or underscore _  no numbers are allowed theek hai 
+    // only a letter underscore(_) or $ should be  1 character no space are allowed
+    // write the name as convantion 
+    // fullname , fullName ( camel case) , full_name (snake case) , full-name (kabab case ) ,FullName (pascal case) example 
+    // isFollow
+    // totalPrice
+
+
+    //  the main thing 
+    // let const ans var 
+    // var : variable can be re - declared and updated . A global scope variable 
+
+    // let : variable cannot be re - declared but can be updated . A block scope variable we will use this only 
+    let bhaikename = "vyanakatesh gupta"
+    let age1 = 19;
+    let price1 = 10000000;
+    let a;
+    {
+        let b = 5;
+        console.log(b)
+    }
+    {
+        let a = 10;// this is different a variable 
+        console.log(a);
+    }
+    // console.log(b) returns an error for not declare 
+    console.log(a);  //returns undefined
+    // let bhaikename = "vyanki" this will generate an error but you can update it as 
+    bhaikename = "vyanki"
+    // problem can re- declare which creates an confusion
+    var name = "vyanki"
+    var name = "kuch bhi "
+    // const : variable cannot be re - decalred or updated . A block scope variable 
+    const gender = "male";
+    // gender = "female"; error
+    // const a; returns the error we need to assing / initialized 
+    const c = 10;
+
+
+
+    // DATA TYPES YAYAY
+    // 7 primitive data type 
+    // Number , string , boolean , undefined , null, bigint, symbol  
+    let isFollow1 = true
+
+    console.log(typeof c)
+    console.log(typeof price1)
+    console.log(typeof name)
+    console.log(typeof isFollow1)
+    is1 = null
+    console.log(typeof is1)
+    console.log(is1)
+    console.log(typeof nhi)
+    //big int 
+    let z = BigInt("123");
+    let xy = Symbol("jai shree ram")
+    console.log(typeof x)
+    console.log(typeof xy)
+    console.log(xy)
+
+    // non primitive objects , arrays , function
+    //  objects are same as the sturcture but with the key pairs  as key : values
+    // {
+    //     name : "vyanki"
+    //     age : 19;
+    // } we declare object eith const
+
+    const student = {
+        fullName : "vyanki bhai",
+        age : 19,
+        isPass : true,
+        cgpa : 8.9
+    };  // for accessing the values of key following methods are used 
+    console.log(student.age)
+    console.log(student["fullName"])
+    // for increasing values 
+    student.age = student.age+1;
+    console.log(student.age)
+    student.fullName = "vyankatesh gupta";
+    console.log(student.fullName);
+
+
+
+
+
+
+    </script>
+ </body>
+ </html>
