@@ -1,0 +1,37 @@
+<!-- this is a basic game we will develop the game with css and DOMs   -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+<body>
+    <script>
+
+let randomnum = Math.floor(Math.random() *100)+1;
+let message = "guess the number between 1 to 100 "
+let user ;
+let count = 1;
+
+while(true)    
+{
+    user = prompt(message);
+    count++;
+        if(user>randomnum){
+            message = `the number is smaller than ${user}`;
+        }
+        else if(user<randomnum){
+            message = `the number is greater than ${user}`;
+        }
+        else{
+            alert(`You guessed it in ${count} attempts`);
+            break;
+        }
+    }
+   
+</script>
+</body>
+</html>
